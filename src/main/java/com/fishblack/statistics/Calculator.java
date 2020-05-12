@@ -42,7 +42,7 @@ public class Calculator {
      * @return
      * @throws IOException
      */
-    public DataInsights getDataInsightsFromParquetFile(TempFile tempParquetFile, Document typeoptionsXML) throws IOException {
+    public DataInsights getStatisticsFromParquetFile(TempFile tempParquetFile, Document typeoptionsXML) throws IOException {
         List<FieldMetadata> fields = FieldMetadata.getPublishedFields(typeoptionsXML);
         return getDataInsightsFromParquetFile(tempParquetFile, fields);
     }
